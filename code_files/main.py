@@ -8,7 +8,7 @@ import joblib
 #logged_model = "runs:/47f8cd46b3bb45f2b2f0333deeb6ee80/model"
 #model = mlflow.pyfunc.load_model(logged_model)
 
-model = joblib.load("../code_files/saved_models/model.pkl")
+model = joblib.load("code_files/saved_models/model.pkl")
 
 feature_columns = [
     'Agent_Age', 'Agent_Rating', 'Store_Latitude', 'Store_Longitude',
