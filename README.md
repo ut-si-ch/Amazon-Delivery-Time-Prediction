@@ -1,9 +1,9 @@
-<img width="1231" height="666" alt="image" src="https://github.com/user-attachments/assets/7e33f543-5ec8-40d4-94d8-ee3495e46f2d" /># 📦 Amazon Delivery Time Prediction 🚚  
+# 📦 Amazon Delivery Time Prediction 🚚  
 _End-to-End Machine Learning Project with MLOps & Streamlit_
 
 ---
 
-##  Table of Contents  
+## Table of Contents  
 - [Problem Statement](#-problem-statement)  
 - [Project Workflow](#-project-workflow)  
 - [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)  
@@ -17,7 +17,7 @@ _End-to-End Machine Learning Project with MLOps & Streamlit_
 
 ---
 
-##  Problem Statement  
+## Problem Statement  
 In the fast-growing e-commerce ecosystem, **on-time delivery** is crucial.  
 This project predicts **order delivery time** using:  
 
@@ -26,11 +26,11 @@ This project predicts **order delivery time** using:
 - Agent details (age, rating, vehicle)  
 - Order category  
 
-This allows companies to optimize **logistics, ETAs, and customer satisfaction**.
+This enables businesses to optimize **logistics, ETAs, and customer satisfaction**.
 
 ---
 
-##  Project Workflow  
+## Project Workflow  
 
 1. **Data Preprocessing**
    - Cleaned raw data and handled missing values.  
@@ -48,8 +48,8 @@ This allows companies to optimize **logistics, ETAs, and customer satisfaction**
 
 3. **Modeling**
    - Trained and compared:  
-     - Linear Regression
-     - Decision Tree 
+     - Linear Regression  
+     - Decision Tree  
      - Random Forest  
      - XGBoost  
      - **LightGBM (Best)**  
@@ -66,43 +66,42 @@ This allows companies to optimize **logistics, ETAs, and customer satisfaction**
 
 ## Exploratory Data Analysis (EDA)  
 
-### 1. Distribution of Delivery Times  
-![Delivery Time Distribution](https://github.com/user-attachments/assets/your-image-id-1)<img width="863" height="553" alt="Distribution of Delivery Times" src="https://github.com/user-attachments/assets/bf550974-acaf-4e7c-9ebf-7fea1f803355" />
+### Distribution of Delivery Times & Boxplot
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/bf550974-acaf-4e7c-9ebf-7fea1f803355" alt="Delivery Time Distribution" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/8c0cd4f5-ebf0-4eff-9875-a94f04aaa98a" alt="Boxplot of Delivery Times" width="45%"/>
+</div>
 
-### 2. Boxplot of Delivery Times 
-![Boxplot of Delivery Times]<img width="695" height="539" alt="download" src="https://github.com/user-attachments/assets/8c0cd4f5-ebf0-4eff-9875-a94f04aaa98a" />
+### Geographical Analysis
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/65d5418f-91fd-4c46-b83e-c075b951880c" alt="World Map" width="48%"/>
+  <img src="https://github.com/user-attachments/assets/3c65dfff-6748-4401-bf0c-d09c9334e102" alt="India Map" width="48%"/>
+</div>
 
-### 3. Geographical Map
-![Geographical Map]<img width="1278" height="682" alt="World Map" src="https://github.com/user-attachments/assets/65d5418f-91fd-4c46-b83e-c075b951880c" />
-<img width="1231" height="666" alt="India_image" src="https://github.com/user-attachments/assets/3c65dfff-6748-4401-bf0c-d09c9334e102" />
+### Agent & Rating Analysis
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/4b470448-c76d-49a8-ba2a-e363161d511f" alt="Agent Histogram" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/95fae774-de46-47ea-b4b2-b82163f84143" alt="Delivery vs Agent Rating" width="45%"/>
+</div>
 
-### 4. Histogram for Agent Performance Analysis
-![Histogram for Agent Performance Analysis]<img width="872" height="553" alt="download" src="https://github.com/user-attachments/assets/4b470448-c76d-49a8-ba2a-e363161d511f" />
+### Weather & Traffic Impact
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/a23b085e-cd4f-4124-893f-7446fc7b80a0" alt="Weather Impact" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/c0e570e6-d0e6-465f-be18-7a5d4b8f5d63" alt="Traffic Impact" width="45%"/>
+</div>
 
+### Product Category & Distance Analysis
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/1a504e4e-8f01-43ed-a3bc-c7ecc931bee0" alt="Product Category Impact" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/ca06d7e1-de4c-4a9b-9b81-96c9dc00bc17" alt="Distance vs Delivery Time" width="45%"/>
+</div>
 
-### 5. Box Plot View for Delivery Time vs. Agent Rating  
-![Box Plot View for Delivery Time vs. Agent Rating]<img width="854" height="553" alt="download" src="https://github.com/user-attachments/assets/95fae774-de46-47ea-b4b2-b82163f84143" />
-
-
-### 6. Bar Plot for Weather Impact Analysis  
-![Bar Plot for Weather Impact Analysis]<img width="1009" height="607" alt="download" src="https://github.com/user-attachments/assets/a23b085e-cd4f-4124-893f-7446fc7b80a0" />
-
-### 7. Barplot for Average Delivery Time Analysis by Traffic Condition
-![Barplot for Average Delivery Time Analysis by Traffic Condition]<img width="1009" height="553" alt="download" src="https://github.com/user-attachments/assets/c0e570e6-d0e6-465f-be18-7a5d4b8f5d63" />
-
-### 8. Bar Plot for Product Category vs. Delivery Time Analysis
-![Bar Plot for Product Category vs. Delivery Time Analysis]<img width="1009" height="609" alt="download" src="https://github.com/user-attachments/assets/1a504e4e-8f01-43ed-a3bc-c7ecc931bee0" />
-
-### 9. Distance vs Delivery Time
-![Distance vs Delivery Time]<img width="854" height="553" alt="download" src="https://github.com/user-attachments/assets/ca06d7e1-de4c-4a9b-9b81-96c9dc00bc17" />
-
-### 4. Feature Importance  
-![Feature Importance]<img width="972" height="547" alt="download" src="https://github.com/user-attachments/assets/0b18b12b-1312-4e79-ad5b-ef88db5cf3e1" />
-
+### Feature Importance  
+<img src="https://github.com/user-attachments/assets/0b18b12b-1312-4e79-ad5b-ef88db5cf3e1" alt="Feature Importance" width="70%"/>
 
 ---
 
-##  Model Training & Results  
+## Model Training & Results  
 
 | Model              | MAE   | RMSE  | R²    |
 |--------------------|-------|-------|-------|
@@ -113,26 +112,24 @@ This allows companies to optimize **logistics, ETAs, and customer satisfaction**
 
 ---
 
-##  MLOps with MLflow  
+## MLOps with MLflow  
 
-- All experiments logged in MLflow UI.  
-- Comparison of multiple models made easy.  
+- All experiments tracked in **MLflow UI**.  
+- Easy comparison of multiple models.  
 - Example MLflow Run:  
 
-![MLflow Experiment]<img width="1908" height="968" alt="ML Flow Experiment View" src="https://github.com/user-attachments/assets/b9a79b25-9d04-468f-929d-59842f799c5f" />
-  
+<img src="https://github.com/user-attachments/assets/b9a79b25-9d04-468f-929d-59842f799c5f" alt="MLflow Experiment View" width="85%"/>
 
 ---
 
-##  Streamlit Application  
+## Streamlit Application  
 
 ### Features  
 - Input: Distance, Weather, Traffic, Agent details, Order Category.  
-- Output: Predicted Delivery Time.   
+- Output: Predicted Delivery Time.  
 
 ### Deployed App Screenshot  
-![Streamlit UI]<img width="922" height="816" alt="Streamlit UI" src="https://github.com/user-attachments/assets/978f20b2-2506-4b38-ae9d-3647653c81e0" />
-  
+<img src="https://github.com/user-attachments/assets/978f20b2-2506-4b38-ae9d-3647653c81e0" alt="Streamlit UI" width="65%"/>
 
 ---
 
@@ -144,17 +141,16 @@ This allows companies to optimize **logistics, ETAs, and customer satisfaction**
 
 ---
 
-##  Future Improvements  
+## Future Improvements  
 - Add live APIs for **real-time traffic & weather**.  
 - Deploy with **Docker + AWS/GCP/Azure**.  
 - Automate retraining with **CI/CD pipelines**.  
 
 ---
 
-##  Author  
+## Author  
 **Uttam Singh Chaudhary**  
 - Data Science & AI Enthusiast  
 - [LinkedIn](https://linkedin.com/in/uttam-singh-chaudhary) | [GitHub](https://github.com/ut-si-ch)  
 
 ---
-
